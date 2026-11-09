@@ -1,0 +1,10 @@
+import raw from '../data/nodes.json';
+import edges from '../data/relationships.json';
+import {KnowledgeNode,Relation} from './atlas-types';
+export const nodes = raw as KnowledgeNode[];
+export const relationships = edges as Relation[];
+export const MIN_YEAR=Math.min(...nodes.map(n=>n.year));
+export const MAX_YEAR=Math.max(...nodes.map(n=>n.year));
+export const YEARS=Array.from({length:MAX_YEAR-MIN_YEAR+1},(_,i)=>MIN_YEAR+i);
+export const SURVEY_COUNT=nodes.filter(n=>n.source.origin!=='research').length;
+export const RESEARCH_COUNT=nodes.length-SURVEY_COUNT;

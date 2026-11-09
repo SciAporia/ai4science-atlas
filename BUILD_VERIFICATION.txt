@@ -1,0 +1,12 @@
+ARBOR GitHub Pages edition — 2026-11-09
+
+Verified locally:
+- npm ci: passed with the public npm registry and committed lockfile
+- npm run build: data validation, TypeScript and Vite build passed
+- 130 nodes, 9 domains, 44 thematic relationships, 2004–2026
+- Built HTML asset references resolve at root and repository subpaths
+- PDF and favicon included; research JSON matches the deployed atlas
+- No backend or hosted authentication dependencies
+
+GitHub workflow has been prepared and reviewed, but has not run in your GitHub account.
+The Vite size warning for the bundled 3D library/data does not fail the build.

@@ -1,0 +1,984 @@
+{
+  "checkedAt": "2026-11-09",
+  "scope": {
+    "surveyNodes": 52,
+    "researchAdditions": 78,
+    "domains": 9,
+    "coverage": "2004–2026",
+    "exhaustive": false
+  },
+  "findings": [
+    {
+      "domain": "bio",
+      "zh": "蛋白质分支应分别展示结构预测、序列设计、多模态生成与亲和力建模；这些工作具有不同的实验终点，不能用单一成功标签替代。",
+      "en": "Protein prediction, sequence design, multimodal generation and affinity modeling have different scientific endpoints and should remain distinguishable."
+    },
+    {
+      "domain": "chemistry",
+      "zh": "化学分支可串联分子表示、统一评测、反应预测、逆合成、目标生成与实验编排，同时保留不同方法之间的并行发展。",
+      "en": "Chemistry can connect representations, evaluation, reactions, retrosynthesis, generation and orchestration while preserving parallel methodological paths."
+    },
+    {
+      "domain": "materials",
+      "zh": "材料分支可按晶体性质预测、几何表示、等变原子势、材料基础势和生成设计分层。预测能量、生成稳定候选与实验合成是不同终点，应分别展示。",
+      "en": "Organize materials into property prediction, geometry, equivariant potentials, foundation potentials and generative design. Predicted energies, plausible candidates and experimental synthesis are distinct endpoints."
+    },
+    {
+      "domain": "physics",
+      "zh": "已知方程约束、学习解算子和数据驱动动力学应与定律发现区分。跨网格、跨初值和跨物理机制的泛化不可混为一谈。",
+      "en": "Separate constraints from known equations, learned solution operators and learned dynamics from law discovery. Transfer across grids, initial conditions and physical mechanisms are different claims."
+    },
+    {
+      "domain": "earth",
+      "zh": "从确定性中期天气预报向概率集合和观测到预报流程拓展。中期预报精度、极端事件可靠性、概率校准与长期气候外推应使用不同指标。",
+      "en": "The branch expands from deterministic medium-range forecasts toward probabilistic ensembles and observation-to-forecast workflows. Forecast error, extremes, calibration and climate extrapolation require different assessments."
+    },
+    {
+      "domain": "energy",
+      "zh": "能源进展连接早期寿命代理、催化计算基准和真实实验闭环。电池化学体系迁移、催化操作条件和器件级寿命是计算结果之外的重要验证边界。",
+      "en": "Energy links early-lifetime surrogates, catalytic benchmarks and physical laboratory loops. Chemistry transfer, operating conditions and device lifetime remain validation boundaries beyond computation."
+    },
+    {
+      "domain": "math",
+      "zh": "数学分支可按“前提选择 → 可交互形式环境 → 合成证明数据 → 分解与强化学习”阅读。几何专用语言和人机协作证明助手是并行路径，不应强制排列为通用能力递增的单一阶梯。形式检查约束的是所给命题的证明有效性，仍须区分非形式命题翻译、基准覆盖、计算预算和研究数学发现。",
+      "en": "The mathematics branch can be read through premise selection, interactive formal environments, synthetic proof data, and decomposition with reinforcement learning. Specialized geometry languages and human–AI proof assistants are parallel trajectories, not a single ladder of general ability. Formal checking validates supplied statements; translation fidelity, benchmark coverage, compute budgets and research-mathematics discovery remain distinct."
+    },
+    {
+      "domain": "agents",
+      "zh": "科研智能体经历了文献检索问答、证据综合、研究构思评审与可执行计算工作流的分化。可追溯报告、共享研究状态和更多测试时计算改善了流程组织，但论文评审、想法评分、局部实验和独立复现属于不同证据层次，不能互相替代。",
+      "en": "Research agents differentiate into literature question answering, evidence synthesis, ideation and review, and executable computational workflows. Traceable reports, shared research state and more test-time compute improve workflow organization. Manuscript reviews, idea ratings, bounded experiments and independent replication remain different evidential levels."
+    },
+    {
+      "domain": "robotics",
+      "zh": "2004 年机器人科学家和 2015 年 Eve 补足真实实验闭环的早期根部；RT 系列、Open X-Embodiment、Octo、π₀ 与 ALOHA 则说明近年执行和数据基础设施的发展。后者虽可能支持未来自动实验室，但其原始论文没有普遍证明自主科学发现，因此在界面上明确标为通用机器人基础设施。",
+      "en": "The 2004 Robot Scientist and 2015 Eve add early roots of physical experimental loops. RT models, Open X-Embodiment, Octo, π₀ and ALOHA show later progress in execution and data infrastructure. They may support future laboratories, but their papers do not generally establish autonomous scientific discovery and should remain visibly labeled as general robotics infrastructure."
+    }
+  ],
+  "detailedFindings": [
+    {
+      "domain": "bio",
+      "zh": "蛋白质分支应分别展示结构预测、序列设计、多模态生成与亲和力建模；这些工作具有不同的实验终点，不能用单一成功标签替代。",
+      "en": "Protein prediction, sequence design, multimodal generation and affinity modeling have different scientific endpoints and should remain distinguishable."
+    },
+    {
+      "domain": "bio",
+      "zh": "单细胞和基因组路线提供从表示学习到功能预测的另一条发展脉络；计算扰动、注意力解释和长序列生成不能直接等同于因果实验或可存活生物。",
+      "en": "Single-cell and genome models form a separate representation-to-function pathway; computational perturbations, attention and long-sequence generation do not directly establish causality or organism viability."
+    },
+    {
+      "domain": "chemistry",
+      "zh": "化学分支可串联分子表示、统一评测、反应预测、逆合成、目标生成与实验编排，同时保留不同方法之间的并行发展。",
+      "en": "Chemistry can connect representations, evaluation, reactions, retrosynthesis, generation and orchestration while preserving parallel methodological paths."
+    },
+    {
+      "domain": "chemistry",
+      "zh": "图有效性、代理性质分数、专家路线评估、湿实验活性与临床疗效是不同层级的终点；界面应明确节点实际验证到了哪一层。",
+      "en": "Graph validity, proxy properties, expert route judgment, measured activity and clinical efficacy are distinct endpoints; each node should state its actual validation scope."
+    },
+    {
+      "domain": "bio",
+      "zh": "模型训练中的自蒸馏、推理中的循环和研究者重新训练应与部署后的持久自我改进明确区分。",
+      "en": "Training-time self-distillation, inference loops and researcher-directed retraining should be distinguished from persistent self-improvement after deployment."
+    },
+    {
+      "domain": "chemistry",
+      "zh": "智能体工具调用和自主实验室编排可实现闭环，但是否更新可迁移方法，需要独立于任务完成率的证据。",
+      "en": "Tool agents and laboratory orchestration can close experimental loops, but transferable method improvement requires evidence beyond task completion."
+    },
+    {
+      "domain": "materials",
+      "zh": "材料分支可按晶体性质预测、几何表示、等变原子势、材料基础势和生成设计分层。预测能量、生成稳定候选与实验合成是不同终点，应分别展示。",
+      "en": "Organize materials into property prediction, geometry, equivariant potentials, foundation potentials and generative design. Predicted energies, plausible candidates and experimental synthesis are distinct endpoints."
+    },
+    {
+      "domain": "physics",
+      "zh": "已知方程约束、学习解算子和数据驱动动力学应与定律发现区分。跨网格、跨初值和跨物理机制的泛化不可混为一谈。",
+      "en": "Separate constraints from known equations, learned solution operators and learned dynamics from law discovery. Transfer across grids, initial conditions and physical mechanisms are different claims."
+    },
+    {
+      "domain": "earth",
+      "zh": "从确定性中期天气预报向概率集合和观测到预报流程拓展。中期预报精度、极端事件可靠性、概率校准与长期气候外推应使用不同指标。",
+      "en": "The branch expands from deterministic medium-range forecasts toward probabilistic ensembles and observation-to-forecast workflows. Forecast error, extremes, calibration and climate extrapolation require different assessments."
+    },
+    {
+      "domain": "energy",
+      "zh": "能源进展连接早期寿命代理、催化计算基准和真实实验闭环。电池化学体系迁移、催化操作条件和器件级寿命是计算结果之外的重要验证边界。",
+      "en": "Energy links early-lifetime surrogates, catalytic benchmarks and physical laboratory loops. Chemistry transfer, operating conditions and device lifetime remain validation boundaries beyond computation."
+    },
+    {
+      "domain": "math",
+      "zh": "数学分支可按“前提选择 → 可交互形式环境 → 合成证明数据 → 分解与强化学习”阅读。几何专用语言和人机协作证明助手是并行路径，不应强制排列为通用能力递增的单一阶梯。形式检查约束的是所给命题的证明有效性，仍须区分非形式命题翻译、基准覆盖、计算预算和研究数学发现。",
+      "en": "The mathematics branch can be read through premise selection, interactive formal environments, synthetic proof data, and decomposition with reinforcement learning. Specialized geometry languages and human–AI proof assistants are parallel trajectories, not a single ladder of general ability. Formal checking validates supplied statements; translation fidelity, benchmark coverage, compute budgets and research-mathematics discovery remain distinct."
+    },
+    {
+      "domain": "agents",
+      "zh": "科研智能体经历了文献检索问答、证据综合、研究构思评审与可执行计算工作流的分化。可追溯报告、共享研究状态和更多测试时计算改善了流程组织，但论文评审、想法评分、局部实验和独立复现属于不同证据层次，不能互相替代。",
+      "en": "Research agents differentiate into literature question answering, evidence synthesis, ideation and review, and executable computational workflows. Traceable reports, shared research state and more test-time compute improve workflow organization. Manuscript reviews, idea ratings, bounded experiments and independent replication remain different evidential levels."
+    },
+    {
+      "domain": "robotics",
+      "zh": "2004 年机器人科学家和 2015 年 Eve 补足真实实验闭环的早期根部；RT 系列、Open X-Embodiment、Octo、π₀ 与 ALOHA 则说明近年执行和数据基础设施的发展。后者虽可能支持未来自动实验室，但其原始论文没有普遍证明自主科学发现，因此在界面上明确标为通用机器人基础设施。",
+      "en": "The 2004 Robot Scientist and 2015 Eve add early roots of physical experimental loops. RT models, Open X-Embodiment, Octo, π₀ and ALOHA show later progress in execution and data infrastructure. They may support future laboratories, but their papers do not generally establish autonomous scientific discovery and should remain visibly labeled as general robotics infrastructure."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://doi.org/10.1038/s41586-019-1923-7",
+      "title": "Improved protein structure prediction using potentials from deep learning"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "title": "Highly accurate protein structure prediction with AlphaFold"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.abj8754",
+      "title": "Accurate prediction of protein structures and interactions using a 3-track neural network"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.add2187",
+      "title": "Robust deep learning-based protein sequence design using ProteinMPNN"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.ade2574",
+      "title": "Evolutionary-scale prediction of atomic-level protein structure with a language model"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41587-022-01618-2",
+      "title": "Large language models generate functional protein sequences across diverse families"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.ads0018",
+      "title": "Simulating 500 million years of evolution with a language model"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.ado9336",
+      "title": "Sequence modeling and design from molecular to genome scale with Evo"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-023-06139-9",
+      "title": "Transfer learning enables predictions in network biology"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-024-02305-7",
+      "title": "Large-scale foundation model on single-cell transcriptomics"
+    },
+    {
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1",
+      "title": "Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-024-02272-z",
+      "title": "OpenFold: retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-019-0494-8",
+      "title": "scGen predicts single-cell perturbation responses"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41592-021-01252-x",
+      "title": "Effective gene expression prediction from sequence by integrating long-range interactions"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper/2015/hash/f9be311e65d81a9ad8150a60844bb94c-Abstract.html",
+      "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v70/gilmer17a.html",
+      "title": "Neural Message Passing for Quantum Chemistry"
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a",
+      "title": "MoleculeNet: a benchmark for molecular machine learning"
+    },
+    {
+      "url": "https://doi.org/10.1021/acscentsci.9b00576",
+      "title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction"
+    },
+    {
+      "url": "https://doi.org/10.1038/nature25978",
+      "title": "Planning chemical syntheses with deep neural networks and symbolic AI"
+    },
+    {
+      "url": "https://doi.org/10.1038/s42256-024-00832-8",
+      "title": "Augmenting large language models with chemistry tools"
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229862",
+      "title": "ChemOS: An orchestration software to democratize autonomous discovery"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-021-03213-y",
+      "title": "Bayesian reaction optimization as a tool for chemical synthesis"
+    },
+    {
+      "url": "https://doi.org/10.1021/acs.jcim.8b00839",
+      "title": "GuacaMol: Benchmarking Models for de Novo Molecular Design"
+    },
+    {
+      "url": "https://doi.org/10.1186/s13321-017-0235-x",
+      "title": "Molecular de-novo design through deep reinforcement learning"
+    },
+    {
+      "url": "https://iclr.cc/virtual_2020/poster_S1esMkHYPr.html",
+      "title": "GraphAF: a Flow-based Autoregressive Model for Molecular Graph Generation"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41587-019-0224-x",
+      "title": "Deep learning enables rapid identification of potent DDR1 kinase inhibitors"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevLett.98.146401",
+      "title": "Generalized Neural-Network Representation of High-Dimensional Potential-Energy Surfaces"
+    },
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2017/hash/303ed4c69846ab36c2904d3ba8573050-Abstract.html",
+      "title": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevLett.120.145301",
+      "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties"
+    },
+    {
+      "url": "https://doi.org/10.1021/acs.chemmater.9b01294",
+      "title": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41524-021-00650-1",
+      "title": "Atomistic Line Graph Neural Network for improved materials property predictions"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41467-022-29939-5",
+      "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials"
+    },
+    {
+      "url": "https://papers.neurips.cc/paper_files/paper/2022/hash/4a36c3c51af11ed9f34615b81edb5bbc-Abstract-Conference.html",
+      "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+    },
+    {
+      "url": "https://www.nature.com/articles/s42256-023-00716-3",
+      "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling"
+    },
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2023/hash/38b787fc530d0b31825827e2cc306656-Abstract-Conference.html",
+      "title": "Crystal Structure Prediction by Joint Equivariant Diffusion"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.04967",
+      "title": "MatterSim: A Deep Learning Atomistic Model Across Elements, Temperatures and Pressures"
+    },
+    {
+      "url": "https://doi.org/10.1103/PhysRevLett.120.143001",
+      "title": "Deep Potential Molecular Dynamics: A Scalable Model with the Accuracy of Quantum Mechanics"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jcp.2018.10.045",
+      "title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations"
+    },
+    {
+      "url": "https://arxiv.org/abs/2010.08895",
+      "title": "Fourier Neural Operator for Parametric Partial Differential Equations"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v119/sanchez-gonzalez20a.html",
+      "title": "Learning to Simulate Complex Physics with Graph Networks"
+    },
+    {
+      "url": "https://www.nature.com/articles/s42256-021-00302-5",
+      "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators"
+    },
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2022/hash/0a9747136d411fb83f0cf81820d44afb-Abstract-Datasets_and_Benchmarks.html",
+      "title": "PDEBench: An Extensive Benchmark for Scientific Machine Learning"
+    },
+    {
+      "url": "https://arxiv.org/abs/2202.11214",
+      "title": "FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators"
+    },
+    {
+      "url": "https://papers.nips.cc/paper_files/paper/2022/hash/a2affd71d15e8fedffe18d0219f4837a-Abstract-Conference.html",
+      "title": "Earthformer: Exploring Space-Time Transformers for Earth System Forecasting"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-023-06185-3",
+      "title": "Accurate medium-range global weather forecasting with 3D neural networks"
+    },
+    {
+      "url": "https://doi.org/10.1126/science.adi2336",
+      "title": "Learning skillful medium-range global weather forecasting"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v202/nguyen23a.html",
+      "title": "ClimaX: A foundation model for weather and climate"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41612-023-00512-1",
+      "title": "FuXi: a cascade machine learning forecasting system for 15-day global weather forecast"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-024-08252-9",
+      "title": "Probabilistic weather forecasting with machine learning"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-025-08897-0",
+      "title": "End-to-end data-driven weather prediction"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41560-019-0356-8",
+      "title": "Data-driven prediction of battery cycle life before capacity degradation"
+    },
+    {
+      "url": "https://doi.org/10.1021/acscatal.0c04525",
+      "title": "Open Catalyst 2020 (OC20) Dataset and Community Challenges"
+    },
+    {
+      "url": "https://arxiv.org/abs/2206.08917",
+      "title": "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts"
+    },
+    {
+      "url": "https://doi.org/10.1126/sciadv.aaz8867",
+      "title": "Self-driving laboratory for accelerated discovery of thin-film materials"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-025-09951-7",
+      "title": "Discovery Learning predicts battery cycle life from minimal experiments"
+    },
+    {
+      "url": "https://arxiv.org/abs/1606.04442",
+      "title": "DeepMath - Deep Sequence Models for Premise Selection"
+    },
+    {
+      "url": "https://arxiv.org/abs/2306.15626",
+      "title": "LeanDojo: Theorem Proving with Retrieval-Augmented Language Models"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.14333",
+      "title": "DeepSeek-Prover: Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data"
+    },
+    {
+      "url": "https://arxiv.org/abs/2504.21801",
+      "title": "DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41586-025-09833-y",
+      "title": "Olympiad-level formal mathematical reasoning with reinforcement learning"
+    },
+    {
+      "url": "https://arxiv.org/abs/2502.03544",
+      "title": "Gold-medalist Performance in Solving Olympiad Geometry with AlphaGeometry2"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.12534",
+      "title": "Lean Copilot: Large Language Models as Copilots for Theorem Proving in Lean"
+    },
+    {
+      "url": "https://arxiv.org/abs/2502.18864v1",
+      "title": "Towards an AI co-scientist"
+    },
+    {
+      "url": "https://arxiv.org/abs/2504.08066",
+      "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
+    },
+    {
+      "url": "https://arxiv.org/abs/2312.07559",
+      "title": "PaperQA: Retrieval-Augmented Generative Agent for Scientific Research"
+    },
+    {
+      "url": "https://arxiv.org/abs/2409.13740",
+      "title": "Language agents achieve superhuman synthesis of scientific knowledge"
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.02824",
+      "title": "Kosmos: An AI Scientist for Autonomous Discovery"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.07738",
+      "title": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models"
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.04227",
+      "title": "Agent Laboratory: Using LLM Agents as Research Assistants"
+    },
+    {
+      "url": "https://www.nature.com/articles/nature02236",
+      "title": "Functional genomic hypothesis generation and experimentation by a robot scientist"
+    },
+    {
+      "url": "https://doi.org/10.1098/rsif.2014.1289",
+      "title": "Cheaper faster drug development validated by the repositioning of drugs against neglected tropical diseases"
+    },
+    {
+      "url": "https://arxiv.org/abs/2401.12963",
+      "title": "AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents"
+    },
+    {
+      "url": "https://arxiv.org/abs/2212.06817",
+      "title": "RT-1: Robotics Transformer for Real-World Control at Scale"
+    },
+    {
+      "url": "https://arxiv.org/abs/2307.15818",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.08864",
+      "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.12213",
+      "title": "Octo: An Open-Source Generalist Robot Policy"
+    },
+    {
+      "url": "https://arxiv.org/abs/2410.24164v1",
+      "title": "π₀: A Vision-Language-Action Flow Model for General Robot Control"
+    },
+    {
+      "url": "https://arxiv.org/abs/2304.13705",
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+    },
+    {
+      "url": "https://arxiv.org/html/2504.08066",
+      "title": "The AI Scientist-v2: full paper, review protocol and limitations"
+    }
+  ],
+  "reviewBatches": [
+    {
+      "batch": "bio-chem",
+      "checkedAt": "2026-11-09",
+      "queries": [
+        "site:nature.com AlphaFold Improved protein structure prediction potentials deep learning Senior 2020",
+        "site:nature.com Highly accurate protein structure prediction with AlphaFold Jumper 2021",
+        "site:science.org RoseTTAFold accurate prediction structures interactions three track Baek 2021",
+        "site:pmc.ncbi.nlm.nih.gov ProteinMPNN robust deep learning protein sequence design Dauparas 2022",
+        "site:pubmed.ncbi.nlm.nih.gov Evolutionary-scale prediction atomic-level protein structure language model Lin 2023",
+        "site:nature.com ProGen Large language models generate functional protein sequences diverse families Madani 2023",
+        "site:pubmed.ncbi.nlm.nih.gov Simulating 500 million years evolution language model Hayes 2025",
+        "site:science.org Evo Sequence modeling design molecular genome scale Nguyen 2024",
+        "site:nature.com Geneformer Transfer learning predictions network biology Theodoris 2023",
+        "site:nature.com scFoundation Large-scale foundation model single-cell transcriptomics Hao 2024",
+        "site:biorxiv.org Boltz-2 Towards Accurate Efficient Binding Affinity Prediction Passaro 2025",
+        "site:nature.com OpenFold retraining AlphaFold2 learning mechanisms capacity generalization Ahdritz 2024",
+        "site:nature.com scGen predicts single-cell perturbation responses 2019",
+        "site:nature.com Enformer Effective gene expression prediction sequence integrating long-range interactions 2021",
+        "site:proceedings.neurips.cc Convolutional Networks Graphs Learning Molecular Fingerprints 2015",
+        "site:proceedings.mlr.press Neural Message Passing Quantum Chemistry Gilmer 2017",
+        "site:pubs.rsc.org MoleculeNet benchmark molecular machine learning Wu 2018",
+        "site:pubs.acs.org Molecular Transformer Uncertainty-Calibrated Chemical Reaction Prediction Schwaller 2019",
+        "site:nature.com Planning chemical syntheses deep neural networks symbolic AI Segler 2018",
+        "site:nature.com ChemCrow Augmenting large language models chemistry tools Bran 2024",
+        "site:journals.plos.org ChemOS orchestration software democratize autonomous discovery 2020",
+        "site:nature.com Bayesian reaction optimization tool chemical synthesis Shields 2021",
+        "site:pubmed.ncbi.nlm.nih.gov GuacaMol Benchmarking Models de Novo Molecular Design Nathan Brown Fiscato 2019",
+        "site:link.springer.com Molecular de-novo design deep reinforcement learning Olivecrona 2017",
+        "site:iclr.cc GraphAF Flow-based Autoregressive Model Molecular Graph Generation 2020",
+        "site:nature.com Deep learning enables rapid identification potent DDR1 kinase inhibitors Zhavoronkov 2019"
+      ],
+      "selectionRationale": "26 additions: 14 life-science works and 12 chemistry works. The selection fills foundational representations, scientific prediction, experimental design, benchmark infrastructure and agent orchestration around the existing 52-node survey-derived atlas. It is an editorial, primary-source-checked selection rather than an exhaustive or citation-ranked census. Only verified publication versions are represented; no speculative future work is included.",
+      "scope": {
+        "bio": 14,
+        "chemistry": 12,
+        "years": [
+          2015,
+          2025
+        ]
+      },
+      "verification": "Primary publisher or conference metadata and abstracts were checked through authoritative search; direct page opens were attempted. Some Nature pages redirected to inaccessible identity-provider pages and some preprint pages returned access errors. This is therefore metadata-and-abstract verification with full text available for selected sources, not an assertion that every full paper was reviewed. Caveats distinguish inference, experimental scope and editorial interpretation.",
+      "publicationYearPolicy": "Use the selected journal or conference version rather than the earliest preprint. AlphaFold CASP13: 2020 journal despite 2019 DOI string; MoleculeNet: 2018 journal volume, online 2017; ChemOS: 2020 journal, preprint 2018; ESM3: 2025 journal, preprint 2024. Boltz-2 explicitly uses bioRxiv v1 posted June 2025 and remains labeled preprint.",
+      "scorePolicy": "Node scores are editorial representation, method-contribution and evidence-discussion relevance, weighted 50/30/20 in the atlas. They are not citation counts, evidence-strength ratings or measured scientific impact.",
+      "findings": [
+        {
+          "domain": "bio",
+          "zh": "蛋白质分支应分别展示结构预测、序列设计、多模态生成与亲和力建模；这些工作具有不同的实验终点，不能用单一成功标签替代。",
+          "en": "Protein prediction, sequence design, multimodal generation and affinity modeling have different scientific endpoints and should remain distinguishable."
+        },
+        {
+          "domain": "bio",
+          "zh": "单细胞和基因组路线提供从表示学习到功能预测的另一条发展脉络；计算扰动、注意力解释和长序列生成不能直接等同于因果实验或可存活生物。",
+          "en": "Single-cell and genome models form a separate representation-to-function pathway; computational perturbations, attention and long-sequence generation do not directly establish causality or organism viability."
+        },
+        {
+          "domain": "chemistry",
+          "zh": "化学分支可串联分子表示、统一评测、反应预测、逆合成、目标生成与实验编排，同时保留不同方法之间的并行发展。",
+          "en": "Chemistry can connect representations, evaluation, reactions, retrosynthesis, generation and orchestration while preserving parallel methodological paths."
+        },
+        {
+          "domain": "chemistry",
+          "zh": "图有效性、代理性质分数、专家路线评估、湿实验活性与临床疗效是不同层级的终点；界面应明确节点实际验证到了哪一层。",
+          "en": "Graph validity, proxy properties, expert route judgment, measured activity and clinical efficacy are distinct endpoints; each node should state its actual validation scope."
+        },
+        {
+          "domain": "bio",
+          "zh": "模型训练中的自蒸馏、推理中的循环和研究者重新训练应与部署后的持久自我改进明确区分。",
+          "en": "Training-time self-distillation, inference loops and researcher-directed retraining should be distinguished from persistent self-improvement after deployment."
+        },
+        {
+          "domain": "chemistry",
+          "zh": "智能体工具调用和自主实验室编排可实现闭环，但是否更新可迁移方法，需要独立于任务完成率的证据。",
+          "en": "Tool agents and laboratory orchestration can close experimental loops, but transferable method improvement requires evidence beyond task completion."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://doi.org/10.1038/s41586-019-1923-7",
+          "title": "Improved protein structure prediction using potentials from deep learning"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03819-2",
+          "title": "Highly accurate protein structure prediction with AlphaFold"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.abj8754",
+          "title": "Accurate prediction of protein structures and interactions using a 3-track neural network"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.add2187",
+          "title": "Robust deep learning-based protein sequence design using ProteinMPNN"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.ade2574",
+          "title": "Evolutionary-scale prediction of atomic-level protein structure with a language model"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41587-022-01618-2",
+          "title": "Large language models generate functional protein sequences across diverse families"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.ads0018",
+          "title": "Simulating 500 million years of evolution with a language model"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.ado9336",
+          "title": "Sequence modeling and design from molecular to genome scale with Evo"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-023-06139-9",
+          "title": "Transfer learning enables predictions in network biology"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-024-02305-7",
+          "title": "Large-scale foundation model on single-cell transcriptomics"
+        },
+        {
+          "url": "https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1",
+          "title": "Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-024-02272-z",
+          "title": "OpenFold: retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-019-0494-8",
+          "title": "scGen predicts single-cell perturbation responses"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41592-021-01252-x",
+          "title": "Effective gene expression prediction from sequence by integrating long-range interactions"
+        },
+        {
+          "url": "https://proceedings.neurips.cc/paper/2015/hash/f9be311e65d81a9ad8150a60844bb94c-Abstract.html",
+          "title": "Convolutional Networks on Graphs for Learning Molecular Fingerprints"
+        },
+        {
+          "url": "https://proceedings.mlr.press/v70/gilmer17a.html",
+          "title": "Neural Message Passing for Quantum Chemistry"
+        },
+        {
+          "url": "https://pubs.rsc.org/en/content/articlehtml/2018/sc/c7sc02664a",
+          "title": "MoleculeNet: a benchmark for molecular machine learning"
+        },
+        {
+          "url": "https://doi.org/10.1021/acscentsci.9b00576",
+          "title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction"
+        },
+        {
+          "url": "https://doi.org/10.1038/nature25978",
+          "title": "Planning chemical syntheses with deep neural networks and symbolic AI"
+        },
+        {
+          "url": "https://doi.org/10.1038/s42256-024-00832-8",
+          "title": "Augmenting large language models with chemistry tools"
+        },
+        {
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229862",
+          "title": "ChemOS: An orchestration software to democratize autonomous discovery"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-021-03213-y",
+          "title": "Bayesian reaction optimization as a tool for chemical synthesis"
+        },
+        {
+          "url": "https://doi.org/10.1021/acs.jcim.8b00839",
+          "title": "GuacaMol: Benchmarking Models for de Novo Molecular Design"
+        },
+        {
+          "url": "https://doi.org/10.1186/s13321-017-0235-x",
+          "title": "Molecular de-novo design through deep reinforcement learning"
+        },
+        {
+          "url": "https://iclr.cc/virtual_2020/poster_S1esMkHYPr.html",
+          "title": "GraphAF: a Flow-based Autoregressive Model for Molecular Graph Generation"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41587-019-0224-x",
+          "title": "Deep learning enables rapid identification of potent DDR1 kinase inhibitors"
+        }
+      ]
+    },
+    {
+      "batch": "physical",
+      "checkedAt": "2026-11-09",
+      "queries": [
+        "Behler Parrinello 2007 neural network potential original PRL",
+        "SchNet continuous filter convolution neural network NeurIPS 2017",
+        "CGCNN crystal graph convolution 2018 Xie Grossman",
+        "MEGNet graph networks universal molecules crystals 2019 ACS",
+        "ALIGNN line graph neural network 2021 Nature",
+        "NequIP E3 equivariant 2022 Batzner Nature Communications",
+        "MACE higher order equivariant NeurIPS 2022",
+        "CHGNet charge informed atomistic 2023 Nature Machine Intelligence",
+        "DiffCSP crystal structure prediction joint equivariant diffusion NeurIPS 2023",
+        "MatterSim deep learning atomistic elements temperatures pressures arxiv",
+        "PINNs Raissi Perdikaris Karniadakis 2019 Journal Computational Physics",
+        "Fourier Neural Operator parametric partial differential equations 2020 2021",
+        "DeepONet learning nonlinear operators 2021 Nature",
+        "Deep Potential Molecular Dynamics 2018 PRL",
+        "Learning to Simulate Complex Physics with Graph Networks ICML 2020",
+        "PDEBench scientific machine learning NeurIPS 2022",
+        "GraphCast Science 2023 medium range global forecasting",
+        "Pangu Weather 3D neural networks Nature 2023",
+        "FourCastNet 2202.11214 original paper",
+        "GenCast probabilistic weather forecasting publication 2024 2025",
+        "ClimaX foundation model weather climate ICML 2023",
+        "FuXi cascade 15 day global weather 2023",
+        "Earthformer space time transformers NeurIPS 2022",
+        "Aardvark end to end weather prediction Nature 2025 Anna Allen",
+        "Severson data driven prediction battery cycle life 2019 Nature Energy",
+        "Open Catalyst OC20 dataset Chanussot 2021 ACS",
+        "Open Catalyst OC22 oxide electrocatalysts 2022",
+        "MacLeod self driving laboratory thin film materials Ada 2020",
+        "site.nature.com/articles/s41586-025-09951-7 Discovery Learning authors Published"
+      ],
+      "selectionRationale": {
+        "zh": "新增 29 项原始论文，覆盖材料 10、物理 6、地球 8、能源 5。选择可连接早期方法、结构表示、基础模型、生成设计、预测评估与物理实验的代表节点，避免复制既有 52 项内容。作者论文、出版社与正式会议为主要依据，不以博客或引用数代替核验。非系统综述，未宣称穷尽至检索日期的所有成果。时间采用节点所引版本：FNO 为 2020 首版预印本，OC20 为 2021 期刊论文，GenCast 为 2024 在线发表（2025 卷期），MatterSim 为 2024 预印本。最新纳入工作是 2026 年 2 月发表的电池 Discovery Learning。所有评分为编辑相关性，所有新增边为主题对照。",
+        "en": "Adds 29 original-paper nodes: 10 materials, 6 physics, 8 Earth and 5 energy. Selection connects early methods, representations, foundation models, generative design, prediction evaluation and physical experiments while avoiding the existing 52 nodes. Original papers, publishers and conference proceedings take priority over blogs or citation counts. This is a curated expansion, not a systematic or exhaustive review. Years follow the cited version: FNO uses its 2020 first preprint; OC20 its 2021 journal paper; GenCast its 2024 online publication (2025 issue); MatterSim its 2024 preprint. The latest addition is battery Discovery Learning, published February 2026. Scores reflect editorial relevance and new edges are thematic comparisons."
+      },
+      "findings": [
+        {
+          "domain": "materials",
+          "zh": "材料分支可按晶体性质预测、几何表示、等变原子势、材料基础势和生成设计分层。预测能量、生成稳定候选与实验合成是不同终点，应分别展示。",
+          "en": "Organize materials into property prediction, geometry, equivariant potentials, foundation potentials and generative design. Predicted energies, plausible candidates and experimental synthesis are distinct endpoints."
+        },
+        {
+          "domain": "physics",
+          "zh": "已知方程约束、学习解算子和数据驱动动力学应与定律发现区分。跨网格、跨初值和跨物理机制的泛化不可混为一谈。",
+          "en": "Separate constraints from known equations, learned solution operators and learned dynamics from law discovery. Transfer across grids, initial conditions and physical mechanisms are different claims."
+        },
+        {
+          "domain": "earth",
+          "zh": "从确定性中期天气预报向概率集合和观测到预报流程拓展。中期预报精度、极端事件可靠性、概率校准与长期气候外推应使用不同指标。",
+          "en": "The branch expands from deterministic medium-range forecasts toward probabilistic ensembles and observation-to-forecast workflows. Forecast error, extremes, calibration and climate extrapolation require different assessments."
+        },
+        {
+          "domain": "energy",
+          "zh": "能源进展连接早期寿命代理、催化计算基准和真实实验闭环。电池化学体系迁移、催化操作条件和器件级寿命是计算结果之外的重要验证边界。",
+          "en": "Energy links early-lifetime surrogates, catalytic benchmarks and physical laboratory loops. Chemistry transfer, operating conditions and device lifetime remain validation boundaries beyond computation."
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://doi.org/10.1103/PhysRevLett.98.146401",
+          "title": "Generalized Neural-Network Representation of High-Dimensional Potential-Energy Surfaces"
+        },
+        {
+          "url": "https://papers.nips.cc/paper_files/paper/2017/hash/303ed4c69846ab36c2904d3ba8573050-Abstract.html",
+          "title": "SchNet: A continuous-filter convolutional neural network for modeling quantum interactions"
+        },
+        {
+          "url": "https://doi.org/10.1103/PhysRevLett.120.145301",
+          "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties"
+        },
+        {
+          "url": "https://doi.org/10.1021/acs.chemmater.9b01294",
+          "title": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41524-021-00650-1",
+          "title": "Atomistic Line Graph Neural Network for improved materials property predictions"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41467-022-29939-5",
+          "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials"
+        },
+        {
+          "url": "https://papers.neurips.cc/paper_files/paper/2022/hash/4a36c3c51af11ed9f34615b81edb5bbc-Abstract-Conference.html",
+          "title": "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields"
+        },
+        {
+          "url": "https://www.nature.com/articles/s42256-023-00716-3",
+          "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling"
+        },
+        {
+          "url": "https://papers.nips.cc/paper_files/paper/2023/hash/38b787fc530d0b31825827e2cc306656-Abstract-Conference.html",
+          "title": "Crystal Structure Prediction by Joint Equivariant Diffusion"
+        },
+        {
+          "url": "https://arxiv.org/abs/2405.04967",
+          "title": "MatterSim: A Deep Learning Atomistic Model Across Elements, Temperatures and Pressures"
+        },
+        {
+          "url": "https://doi.org/10.1103/PhysRevLett.120.143001",
+          "title": "Deep Potential Molecular Dynamics: A Scalable Model with the Accuracy of Quantum Mechanics"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jcp.2018.10.045",
+          "title": "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations"
+        },
+        {
+          "url": "https://arxiv.org/abs/2010.08895",
+          "title": "Fourier Neural Operator for Parametric Partial Differential Equations"
+        },
+        {
+          "url": "https://proceedings.mlr.press/v119/sanchez-gonzalez20a.html",
+          "title": "Learning to Simulate Complex Physics with Graph Networks"
+        },
+        {
+          "url": "https://www.nature.com/articles/s42256-021-00302-5",
+          "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators"
+        },
+        {
+          "url": "https://papers.nips.cc/paper_files/paper/2022/hash/0a9747136d411fb83f0cf81820d44afb-Abstract-Datasets_and_Benchmarks.html",
+          "title": "PDEBench: An Extensive Benchmark for Scientific Machine Learning"
+        },
+        {
+          "url": "https://arxiv.org/abs/2202.11214",
+          "title": "FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators"
+        },
+        {
+          "url": "https://papers.nips.cc/paper_files/paper/2022/hash/a2affd71d15e8fedffe18d0219f4837a-Abstract-Conference.html",
+          "title": "Earthformer: Exploring Space-Time Transformers for Earth System Forecasting"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-023-06185-3",
+          "title": "Accurate medium-range global weather forecasting with 3D neural networks"
+        },
+        {
+          "url": "https://doi.org/10.1126/science.adi2336",
+          "title": "Learning skillful medium-range global weather forecasting"
+        },
+        {
+          "url": "https://proceedings.mlr.press/v202/nguyen23a.html",
+          "title": "ClimaX: A foundation model for weather and climate"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41612-023-00512-1",
+          "title": "FuXi: a cascade machine learning forecasting system for 15-day global weather forecast"
+        },
+        {
+          "url": "https://doi.org/10.1038/s41586-024-08252-9",
+          "title": "Probabilistic weather forecasting with machine learning"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-025-08897-0",
+          "title": "End-to-end data-driven weather prediction"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41560-019-0356-8",
+          "title": "Data-driven prediction of battery cycle life before capacity degradation"
+        },
+        {
+          "url": "https://doi.org/10.1021/acscatal.0c04525",
+          "title": "Open Catalyst 2020 (OC20) Dataset and Community Challenges"
+        },
+        {
+          "url": "https://arxiv.org/abs/2206.08917",
+          "title": "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts"
+        },
+        {
+          "url": "https://doi.org/10.1126/sciadv.aaz8867",
+          "title": "Self-driving laboratory for accelerated discovery of thin-film materials"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-025-09951-7",
+          "title": "Discovery Learning predicts battery cycle life from minimal experiments"
+        }
+      ]
+    },
+    {
+      "batch": "agents-math",
+      "checkedAt": "2026-11-09",
+      "scope": {
+        "newNodes": 23,
+        "math": 7,
+        "agents": 7,
+        "robotics": 9,
+        "thematicEdges": 10
+      },
+      "queries": [
+        "DeepMath premise selection original paper 2016; LeanDojo NeurIPS 2023 official paper",
+        "DeepSeek-Prover original synthetic data paper 2024; DeepSeek-Prover-V2 subgoal decomposition official paper",
+        "AlphaProof Nature Olympiad-level formal mathematical reasoning reinforcement learning 2025",
+        "AlphaGeometry2 gold medalist performance geometry 2025; Lean Copilot original paper",
+        "Towards an AI co-scientist 2502.18864 original version; AI Scientist-v2 agentic tree search",
+        "PaperQA original paper 2023; PaperQA2 Language agents achieve superhuman synthesis 2024",
+        "Kosmos AI Scientist autonomous discovery 2025 primary paper",
+        "ResearchAgent iterative idea generation scientific literature original paper; Agent Laboratory research assistants paper",
+        "Functional genomic hypothesis generation experimentation robot scientist Nature 2004",
+        "Eve Cheaper faster drug development repositioning neglected tropical diseases 2015",
+        "AutoRT embodied foundation models orchestration robotic agents original paper",
+        "RT-1 RT-2 Open X-Embodiment original papers",
+        "Octo open-source generalist robot policy; pi0 flow matching 2024; ALOHA ACT low cost hardware original paper"
+      ],
+      "selectionRationale": {
+        "zh": "在不重复原有节点的前提下，补入三个领域的方法转折、开放基础设施及早期实验闭环。以原始论文、正式期刊和作者项目为证据，不按引用量排列，也不宣称穷尽领域。每个节点保留双语贡献、持久产物和适用边界。通用机器人工作被单独标为基础设施比较，不并入直接科学发现成果。",
+        "en": "Adds methodological transitions, open infrastructure and early experimental loops across three domains without duplicating existing nodes. Evidence comes from primary papers, journals and author projects; selection is neither citation-ranked nor exhaustive. Every node includes bilingual contributions, retained artifacts and limits. General robotics is explicitly marked as infrastructure comparison, separate from direct scientific discovery."
+      },
+      "yearPolicy": {
+        "zh": "预印本节点使用首发年；正式论文节点使用所引论文出版年。AlphaProof 使用 2025 年 Nature 论文而非 2024 年竞赛事件；Lean Copilot 与 ResearchAgent 保留 2024 年首发并注明 2025 年发表；Co-scientist 和 π₀ 固定首发版本以避免把新修订能力倒置到早年。",
+        "en": "Preprint nodes use first-release years; journal nodes use the cited publication year. AlphaProof uses its 2025 Nature paper rather than the 2024 contest event. Lean Copilot and ResearchAgent retain their 2024 debuts with 2025 publication notes. Co-scientist and π₀ pin initial versions to avoid backdating later capabilities."
+      },
+      "findings": [
+        {
+          "domain": "math",
+          "zh": "数学分支可按“前提选择 → 可交互形式环境 → 合成证明数据 → 分解与强化学习”阅读。几何专用语言和人机协作证明助手是并行路径，不应强制排列为通用能力递增的单一阶梯。形式检查约束的是所给命题的证明有效性，仍须区分非形式命题翻译、基准覆盖、计算预算和研究数学发现。",
+          "en": "The mathematics branch can be read through premise selection, interactive formal environments, synthetic proof data, and decomposition with reinforcement learning. Specialized geometry languages and human–AI proof assistants are parallel trajectories, not a single ladder of general ability. Formal checking validates supplied statements; translation fidelity, benchmark coverage, compute budgets and research-mathematics discovery remain distinct."
+        },
+        {
+          "domain": "agents",
+          "zh": "科研智能体经历了文献检索问答、证据综合、研究构思评审与可执行计算工作流的分化。可追溯报告、共享研究状态和更多测试时计算改善了流程组织，但论文评审、想法评分、局部实验和独立复现属于不同证据层次，不能互相替代。",
+          "en": "Research agents differentiate into literature question answering, evidence synthesis, ideation and review, and executable computational workflows. Traceable reports, shared research state and more test-time compute improve workflow organization. Manuscript reviews, idea ratings, bounded experiments and independent replication remain different evidential levels."
+        },
+        {
+          "domain": "robotics",
+          "zh": "2004 年机器人科学家和 2015 年 Eve 补足真实实验闭环的早期根部；RT 系列、Open X-Embodiment、Octo、π₀ 与 ALOHA 则说明近年执行和数据基础设施的发展。后者虽可能支持未来自动实验室，但其原始论文没有普遍证明自主科学发现，因此在界面上明确标为通用机器人基础设施。",
+          "en": "The 2004 Robot Scientist and 2015 Eve add early roots of physical experimental loops. RT models, Open X-Embodiment, Octo, π₀ and ALOHA show later progress in execution and data infrastructure. They may support future laboratories, but their papers do not generally establish autonomous scientific discovery and should remain visibly labeled as general robotics infrastructure."
+        }
+      ],
+      "relationsPolicy": {
+        "zh": "十条新增关系均为主题联系；年代顺序不构成引用关系或因果继承。仅 Open X-Embodiment—Octo 的数据使用在摘要中明确陈述，仍统一以主题关系呈现。",
+        "en": "All ten added relations are thematic. Chronology does not establish citation or causal inheritance. Open X-Embodiment to Octo has explicit data-use support, but is still presented consistently as a thematic edge."
+      },
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/1606.04442",
+          "title": "DeepMath - Deep Sequence Models for Premise Selection"
+        },
+        {
+          "url": "https://arxiv.org/abs/2306.15626",
+          "title": "LeanDojo: Theorem Proving with Retrieval-Augmented Language Models"
+        },
+        {
+          "url": "https://arxiv.org/abs/2405.14333",
+          "title": "DeepSeek-Prover: Advancing Theorem Proving in LLMs through Large-Scale Synthetic Data"
+        },
+        {
+          "url": "https://arxiv.org/abs/2504.21801",
+          "title": "DeepSeek-Prover-V2: Advancing Formal Mathematical Reasoning via Reinforcement Learning for Subgoal Decomposition"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41586-025-09833-y",
+          "title": "Olympiad-level formal mathematical reasoning with reinforcement learning"
+        },
+        {
+          "url": "https://arxiv.org/abs/2502.03544",
+          "title": "Gold-medalist Performance in Solving Olympiad Geometry with AlphaGeometry2"
+        },
+        {
+          "url": "https://arxiv.org/abs/2404.12534",
+          "title": "Lean Copilot: Large Language Models as Copilots for Theorem Proving in Lean"
+        },
+        {
+          "url": "https://arxiv.org/abs/2502.18864v1",
+          "title": "Towards an AI co-scientist"
+        },
+        {
+          "url": "https://arxiv.org/abs/2504.08066",
+          "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search"
+        },
+        {
+          "url": "https://arxiv.org/abs/2312.07559",
+          "title": "PaperQA: Retrieval-Augmented Generative Agent for Scientific Research"
+        },
+        {
+          "url": "https://arxiv.org/abs/2409.13740",
+          "title": "Language agents achieve superhuman synthesis of scientific knowledge"
+        },
+        {
+          "url": "https://arxiv.org/abs/2511.02824",
+          "title": "Kosmos: An AI Scientist for Autonomous Discovery"
+        },
+        {
+          "url": "https://arxiv.org/abs/2404.07738",
+          "title": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models"
+        },
+        {
+          "url": "https://arxiv.org/abs/2501.04227",
+          "title": "Agent Laboratory: Using LLM Agents as Research Assistants"
+        },
+        {
+          "url": "https://www.nature.com/articles/nature02236",
+          "title": "Functional genomic hypothesis generation and experimentation by a robot scientist"
+        },
+        {
+          "url": "https://doi.org/10.1098/rsif.2014.1289",
+          "title": "Cheaper faster drug development validated by the repositioning of drugs against neglected tropical diseases"
+        },
+        {
+          "url": "https://arxiv.org/abs/2401.12963",
+          "title": "AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents"
+        },
+        {
+          "url": "https://arxiv.org/abs/2212.06817",
+          "title": "RT-1: Robotics Transformer for Real-World Control at Scale"
+        },
+        {
+          "url": "https://arxiv.org/abs/2307.15818",
+          "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control"
+        },
+        {
+          "url": "https://arxiv.org/abs/2310.08864",
+          "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models"
+        },
+        {
+          "url": "https://arxiv.org/abs/2405.12213",
+          "title": "Octo: An Open-Source Generalist Robot Policy"
+        },
+        {
+          "url": "https://arxiv.org/abs/2410.24164v1",
+          "title": "π₀: A Vision-Language-Action Flow Model for General Robot Control"
+        },
+        {
+          "url": "https://arxiv.org/abs/2304.13705",
+          "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+        },
+        {
+          "url": "https://arxiv.org/html/2504.08066",
+          "title": "The AI Scientist-v2: full paper, review protocol and limitations"
+        }
+      ],
+      "evidenceChecks": [
+        {
+          "work": "AlphaProof",
+          "zh": "核对全文的 IMO 评估协议：专家人工形式化，三个已解代数/数论题分别使用约 2–3 天测试时强化学习；训练和推理预算均需与结果一起解释。",
+          "en": "Full-paper IMO protocol checked: expert formalization and roughly 2–3 days of test-time reinforcement learning for each solved algebra/number-theory problem. Training and inference budgets must be interpreted alongside results.",
+          "sourceRef": "turn2848983view0"
+        },
+        {
+          "work": "The AI Scientist-v2",
+          "zh": "核对全文而非宣传标题：三篇中一篇达到工作坊接收门槛，按预定协议在发表前撤稿；人类负责从系统想法中选择初始研究方向。",
+          "en": "Full text checked rather than relying on the title: one of three submissions met a workshop threshold, was withdrawn before publication under the agreed protocol, and humans selected initial directions from system-generated ideas.",
+          "sourceRef": "turn2848983view3"
+        },
+        {
+          "work": "Kosmos",
+          "zh": "保留跨步骤研究状态与证据溯源贡献，但不把协作者估计的数月研究时间宣称为受控实验中的确定加速倍数。",
+          "en": "Retains contributions in cross-step research state and provenance, without presenting collaborators’ month-scale time estimates as measured controlled speedups.",
+          "sourceRef": "turn8497976view1"
+        },
+        {
+          "work": "AI co-scientist / π₀",
+          "zh": "分别打开并固定 2025 和 2024 的首发版本，后续 2026 修订日期不被用作新工作节点或倒推能力。",
+          "en": "Opened and pinned the 2025 and 2024 first versions respectively; later 2026 revision dates are neither new-work nodes nor backdated capability evidence.",
+          "sourceRef": "turn2327187view1"
+        }
+      ]
+    }
+  ]
+}

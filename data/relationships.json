@@ -1,0 +1,398 @@
+[
+  {
+    "source": "robot-scientist",
+    "target": "enpire",
+    "type": "thematic",
+    "label": "物理反馈与流程边界",
+    "labelEn": "Physical feedback and process boundaries",
+    "reason": "两者都涉及物理执行，但本文区分实验假设更新与策略开发程序编辑；此线为主题对照，不是已证实的技术继承。",
+    "reasonEn": "Both involve physical execution, but the survey separates hypothesis updates from policy-development edits. This is a thematic comparison, not verified technical inheritance."
+  },
+  {
+    "source": "melvin",
+    "target": "pytheus",
+    "type": "thematic",
+    "label": "量子实验设计",
+    "labelEn": "Quantum experiment design",
+    "reason": "同属计算量子实验设计；连线组织主题发展，不断言直接继承。",
+    "reasonEn": "Both concern computational quantum-experiment design; the link organizes a theme without asserting direct inheritance."
+  },
+  {
+    "source": "sindy",
+    "target": "ai-feynman",
+    "type": "thematic",
+    "label": "方程与结构假设",
+    "labelEn": "Equations and structural assumptions",
+    "reason": "本文将两者用于说明方程恢复依赖搜索空间或结构假设。",
+    "reasonEn": "The survey uses both to illustrate dependence of equation recovery on search spaces or structural assumptions."
+  },
+  {
+    "source": "ai-physicist",
+    "target": "voyager",
+    "type": "thematic",
+    "label": "可复用知识与技能",
+    "labelEn": "Reusable knowledge and skills",
+    "reason": "理论库与技能库都展示被后续过程消费的持久状态，但领域与验证条件不同。",
+    "reasonEn": "Theory and skill libraries both retain state consumed by later processes, with different domains and verification conditions."
+  },
+  {
+    "source": "alphatensor",
+    "target": "funsearch",
+    "type": "thematic",
+    "label": "可检查的程序发现",
+    "labelEn": "Checkable program discovery",
+    "reason": "两者提供可检查的数学或算法产物；连线不是引用关系。",
+    "reasonEn": "Both produce checkable mathematical or algorithmic outputs; this is not a citation edge."
+  },
+  {
+    "source": "funsearch",
+    "target": "alphaevolve",
+    "type": "thematic",
+    "label": "程序搜索与过程编辑",
+    "labelEn": "Program search and process editing",
+    "reason": "本文把可执行程序保留与元提示共同演化并列，说明产物和过程的不同更新层级。",
+    "reasonEn": "The survey juxtaposes retained executable programs and co-evolved meta-prompts to distinguish product and process updates."
+  },
+  {
+    "source": "alphageometry",
+    "target": "alphatensor",
+    "type": "thematic",
+    "label": "强验证与受限范围",
+    "labelEn": "Strong verification and bounded scope",
+    "reason": "两者都依赖强检查，但验证覆盖的对象和科学意义边界不同。",
+    "reasonEn": "Both use strong checking, but validate different objects with different scope limits."
+  },
+  {
+    "source": "reflexion",
+    "target": "voyager",
+    "type": "thematic",
+    "label": "文本记忆与可执行记忆",
+    "labelEn": "Textual and executable memory",
+    "reason": "4.8节明确对照反馈记忆与可执行技能的继承方式。",
+    "reasonEn": "Section 4.8 explicitly contrasts inherited feedback memory and executable skills."
+  },
+  {
+    "source": "eureka",
+    "target": "dreureka",
+    "type": "thematic",
+    "label": "奖励与训练分布",
+    "labelEn": "Rewards and training distributions",
+    "reason": "本文将奖励代码修订与进一步编辑随机化配置关联起来；同年节点的连线不编码先后时间。",
+    "reasonEn": "The survey connects reward-code revision to randomization configuration edits; an edge between same-year works does not encode publication order."
+  },
+  {
+    "source": "robocat",
+    "target": "enpire",
+    "type": "thematic",
+    "label": "策略能力与开发程序",
+    "labelEn": "Policy capability and development procedures",
+    "reason": "本文对照固定配方下的策略更新和冻结接口下的策略开发程序编辑。",
+    "reasonEn": "The survey contrasts policy updates under a fixed recipe with development-procedure edits under a frozen interface."
+  },
+  {
+    "source": "stop",
+    "target": "dgm",
+    "type": "thematic",
+    "label": "改进器与返回路径",
+    "labelEn": "Improvers and return paths",
+    "reason": "两者用不同对照触及改进过程，需保留任务、快照与实际成本的差别。",
+    "reasonEn": "The two use different controls to examine improvement processes; task, snapshot, and realized-cost differences remain material."
+  },
+  {
+    "source": "ai-scientist",
+    "target": "dgm",
+    "type": "thematic",
+    "label": "工作流自动化与方法继承",
+    "labelEn": "Workflow automation and method inheritance",
+    "reason": "主题连线对比自动化科研产物与可执行过程的修改；不表示AI Scientist是DGM的前身。",
+    "reasonEn": "This thematic edge contrasts automated research outputs with executable-process modification; it does not assert that AI Scientist is DGM’s predecessor."
+  },
+  {
+    "source": "alphafold1",
+    "target": "alphafold2",
+    "type": "thematic",
+    "label": "结构预测阶段",
+    "labelEn": "Structure-prediction stages",
+    "reason": "用同一结构预测问题对照两个阶段；此连线为主题导航，不单独证明方法继承。",
+    "reasonEn": "Compares two stages of the same structural prediction problem; this thematic link is not itself evidence of methodological inheritance."
+  },
+  {
+    "source": "alphafold2",
+    "target": "alphafold3",
+    "type": "thematic",
+    "label": "从蛋白质到相互作用",
+    "labelEn": "Proteins to interactions",
+    "reason": "连接蛋白质结构与更广泛生物分子相互作用终点；用于主题对照。",
+    "reasonEn": "Connects protein structures with broader biomolecular interaction endpoints for thematic comparison."
+  },
+  {
+    "source": "proteinmpnn",
+    "target": "rfdiffusion",
+    "type": "thematic",
+    "label": "序列与骨架设计",
+    "labelEn": "Sequence and backbone design",
+    "reason": "一个以骨架为条件设计序列，另一个生成结构骨架；对照互补设计对象，不把连线作为已核实的引用链。",
+    "reasonEn": "Compares complementary design objects: backbone-conditioned sequences and generated structures, without asserting a verified citation chain."
+  },
+  {
+    "source": "esmfold",
+    "target": "esm3",
+    "type": "thematic",
+    "label": "蛋白质语言模型",
+    "labelEn": "Protein language models",
+    "reason": "对照语言表示驱动的结构预测和多模态可控生成。",
+    "reasonEn": "Compares language-based structure prediction with controlled multimodal protein generation."
+  },
+  {
+    "source": "evo1",
+    "target": "evo2",
+    "type": "thematic",
+    "label": "基因组模型扩展",
+    "labelEn": "Genome-model expansion",
+    "reason": "连接基因组建模的两个阶段，强调训练范围与验证终点的比较。",
+    "reasonEn": "Connects two genome-modeling stages for comparison of training scope and validation endpoints."
+  },
+  {
+    "source": "scgen",
+    "target": "scgpt",
+    "type": "thematic",
+    "label": "单细胞扰动建模",
+    "labelEn": "Single-cell perturbation modeling",
+    "reason": "将潜空间扰动预测与基础模型路线放在同一问题背景下；不表示直接因果继承。",
+    "reasonEn": "Places latent perturbation prediction and foundation models within a shared scientific problem without claiming causal inheritance."
+  },
+  {
+    "source": "neural-fingerprints",
+    "target": "mpnn",
+    "type": "thematic",
+    "label": "学习分子图表示",
+    "labelEn": "Learning molecular graphs",
+    "reason": "对照可学习指纹与消息传递抽象，展示分子表示方法的组织方式。",
+    "reasonEn": "Compares learned fingerprints and message-passing abstractions as molecular representation approaches."
+  },
+  {
+    "source": "molecular-transformer",
+    "target": "chemcrow",
+    "type": "thematic",
+    "label": "预测与工具工作流",
+    "labelEn": "Prediction and tool workflows",
+    "reason": "对照单项反应预测能力与智能体编排能力；不声称该节点就是 ChemCrow 内部的具体工具。",
+    "reasonEn": "Compares reaction prediction with agent orchestration without claiming that this exact model is a specific internal ChemCrow tool."
+  },
+  {
+    "source": "guacamol",
+    "target": "graphaf",
+    "type": "thematic",
+    "label": "生成任务与评价",
+    "labelEn": "Generation and evaluation",
+    "reason": "将分子生成模型放入分布学习和目标优化的评价语境；主题关系不等同于已验证的直接引用。",
+    "reasonEn": "Places graph generation in the context of distribution learning and objective optimization; the thematic relation is not a verified citation."
+  },
+  {
+    "source": "chemos",
+    "target": "mobile-chemist",
+    "type": "thematic",
+    "label": "实验反馈与编排",
+    "labelEn": "Experimental feedback and orchestration",
+    "reason": "对照软件编排和机器人实验两种闭环组成方式，不声称二者存在软件依赖。",
+    "reasonEn": "Compares software orchestration and robotic experimentation as loop components without claiming a software dependency."
+  },
+  {
+    "source": "behler-parrinello",
+    "target": "schnet",
+    "type": "thematic",
+    "label": "局部原子表示",
+    "labelEn": "Local atomic representations",
+    "reason": "比较局部环境描述与可学习几何表示；连接表示主题，不宣称直接技术继承。",
+    "reasonEn": "Compares local-environment descriptions with learned geometry; a thematic comparison, not a claim of direct inheritance."
+  },
+  {
+    "source": "schnet",
+    "target": "nequip",
+    "type": "thematic",
+    "label": "几何与对称性",
+    "labelEn": "Geometry and symmetry",
+    "reason": "比较连续几何滤波与等变张量特征在势函数中的作用。",
+    "reasonEn": "Compares continuous geometric filters and equivariant tensor features in learned potentials."
+  },
+  {
+    "source": "nequip",
+    "target": "mace",
+    "type": "thematic",
+    "label": "等变势的表达能力",
+    "labelEn": "Expressivity in equivariant potentials",
+    "reason": "比较等变消息传递中体阶、训练效率与推理代价的设计选择。",
+    "reasonEn": "Compares body order, data efficiency and computational cost in equivariant message passing."
+  },
+  {
+    "source": "chgnet",
+    "target": "mattersim",
+    "type": "thematic",
+    "label": "基础势的适用范围",
+    "labelEn": "Coverage of foundation potentials",
+    "reason": "比较预训练势模型的数据来源、电子信息与温压覆盖；不推断引用或因果关系。",
+    "reasonEn": "Compares training data, electronic information and temperature–pressure coverage without inferring citation or causality."
+  },
+  {
+    "source": "cgcnn",
+    "target": "megnet",
+    "type": "thematic",
+    "label": "晶体性质图学习",
+    "labelEn": "Graph learning for crystal properties",
+    "reason": "共同研究结构到性质映射，可比较全局状态与跨任务迁移。",
+    "reasonEn": "Both study structure–property mappings, enabling comparison of global state and transfer."
+  },
+  {
+    "source": "diffcsp",
+    "target": "mattergen",
+    "type": "thematic",
+    "label": "晶体生成与验证",
+    "labelEn": "Crystal generation and validation",
+    "reason": "共同生成材料候选，便于比较条件输入、结构约束与后续稳定性验证。",
+    "reasonEn": "Both generate material candidates, inviting comparison of conditioning, structural constraints and downstream stability checks."
+  },
+  {
+    "source": "pinn",
+    "target": "fno",
+    "type": "thematic",
+    "label": "约束解与学习算子",
+    "labelEn": "Constrained solutions and learned operators",
+    "reason": "对比方程残差约束的实例求解与跨实例学习算子，不将时间先后视为技术依赖。",
+    "reasonEn": "Contrasts residual-constrained solution learning with operators across instances; chronology is not technical dependency."
+  },
+  {
+    "source": "deeponet",
+    "target": "fno",
+    "type": "thematic",
+    "label": "算子架构对照",
+    "labelEn": "Operator architectures",
+    "reason": "比较分支—主干表示与傅里叶积分核两种函数空间学习方式。",
+    "reasonEn": "Compares branch–trunk representations with Fourier integral kernels for function-space learning."
+  },
+  {
+    "source": "fno",
+    "target": "fourcastnet",
+    "type": "thematic",
+    "label": "算子与天气场",
+    "labelEn": "Operators and weather fields",
+    "reason": "连接函数场学习和天气应用，展示抽象方法与具体评估终点的关系。",
+    "reasonEn": "Links function-field learning with weather applications and their concrete evaluation endpoints."
+  },
+  {
+    "source": "graphcast",
+    "target": "gencast",
+    "type": "thematic",
+    "label": "确定性与概率预报",
+    "labelEn": "Deterministic and probabilistic forecasting",
+    "reason": "对比单一路径误差与天气集合校准；不暗示后者完全替代前者。",
+    "reasonEn": "Contrasts single-trajectory error with ensemble calibration without implying complete replacement."
+  },
+  {
+    "source": "battery-lifetime",
+    "target": "battery-optimization",
+    "type": "thematic",
+    "label": "寿命预测与实验决策",
+    "labelEn": "Lifetime prediction and experimental decisions",
+    "reason": "比较早期寿命代理与闭环快充优化，区分预测能力和策略选择。",
+    "reasonEn": "Compares early-lifetime surrogates with closed-loop fast-charging optimization, separating prediction from decisions."
+  },
+  {
+    "source": "oc20",
+    "target": "oc22",
+    "type": "thematic",
+    "label": "催化泛化评估",
+    "labelEn": "Catalyst generalization evaluation",
+    "reason": "比较吸附物—表面基准与氧化物体系的任务定义、参考计算及域外评估。",
+    "reasonEn": "Compares task definitions, reference calculations and out-of-domain evaluation across surface and oxide benchmarks."
+  },
+  {
+    "source": "deepmath",
+    "target": "leandojo",
+    "type": "thematic",
+    "label": "前提选择",
+    "labelEn": "Premise selection",
+    "reason": "两项工作都将相关前提筛选作为自动证明的关键接口；此线表示主题连续性，不主张直接技术继承。",
+    "reasonEn": "Both make relevant-premise selection a key interface for automated proving; the edge denotes thematic continuity, not a claimed technical inheritance."
+  },
+  {
+    "source": "deepseek-prover",
+    "target": "deepseek-prover-v2",
+    "type": "thematic",
+    "label": "可检验训练数据",
+    "labelEn": "Checkable training data",
+    "reason": "将合成形式证明的训练路径与后续子目标分解和强化学习并置，展示研究问题的延续。",
+    "reasonEn": "Connects synthetic formal-proof training with later subgoal decomposition and reinforcement learning as a continuing research theme."
+  },
+  {
+    "source": "deepseek-prover-v2",
+    "target": "alphaproof",
+    "type": "thematic",
+    "label": "形式验证奖励",
+    "labelEn": "Formal verification rewards",
+    "reason": "二者都利用形式系统提供奖励或检查信号，适合比较训练与测试时计算；不表示彼此依赖。",
+    "reasonEn": "Both use formal systems for rewards or checks, supporting a comparison of training and test-time compute without implying dependency."
+  },
+  {
+    "source": "alphageometry",
+    "target": "alphageometry2",
+    "type": "thematic",
+    "label": "几何表达与搜索",
+    "labelEn": "Geometry representation & search",
+    "reason": "两代几何系统可用于比较形式语言覆盖、辅助构造和搜索设计的演化。",
+    "reasonEn": "The two geometry systems support comparison of formal-language coverage, auxiliary constructions and search design."
+  },
+  {
+    "source": "paperqa",
+    "target": "paperqa2",
+    "type": "thematic",
+    "label": "文献证据综合",
+    "labelEn": "Literature evidence synthesis",
+    "reason": "将科研问答与多证据综合、矛盾识别放在同一条证据检索主题路径。",
+    "reasonEn": "Places scientific question answering, multi-source synthesis and contradiction detection on one evidence-retrieval trajectory."
+  },
+  {
+    "source": "researchagent",
+    "target": "ai-co-scientist",
+    "type": "thematic",
+    "label": "假设与评审",
+    "labelEn": "Hypotheses & review",
+    "reason": "比较文献驱动构思和多智能体假设评审；连线不表示已经建立相同的实验验证能力。",
+    "reasonEn": "Compares literature-driven ideation with multi-agent hypothesis review without implying equivalent experimental validation."
+  },
+  {
+    "source": "ai-scientist",
+    "target": "ai-scientist-v2",
+    "type": "thematic",
+    "label": "计算实验规划",
+    "labelEn": "Computational experiment planning",
+    "reason": "比较自动计算研究流程中的模板化执行与树搜索实验规划，保持验证边界可见。",
+    "reasonEn": "Compares template-driven execution and tree-search planning in automated computational research while preserving validation boundaries."
+  },
+  {
+    "source": "robot-scientist-2004",
+    "target": "robot-scientist",
+    "type": "thematic",
+    "label": "假设—实验闭环",
+    "labelEn": "Hypothesis–experiment loops",
+    "reason": "早期功能基因组机器人与 Adam 都围绕假设、实验和修订构建闭环，可用于追踪自动实验史。",
+    "reasonEn": "The early functional-genomics robot and Adam both organize hypotheses, experiments and revision, supporting a history of automated experimentation."
+  },
+  {
+    "source": "rt1",
+    "target": "rt2",
+    "type": "thematic",
+    "label": "语言到机器人动作",
+    "labelEn": "Language to robot actions",
+    "reason": "对照多任务控制与视觉语言动作模型的表示变化；属于机器人基础设施而非科学结论的继承。",
+    "reasonEn": "Contrasts representations in multi-task control and vision-language-action models; this is an infrastructure comparison, not inheritance of scientific findings."
+  },
+  {
+    "source": "open-x-embodiment",
+    "target": "octo",
+    "type": "thematic",
+    "label": "共享数据与策略迁移",
+    "labelEn": "Shared data & policy transfer",
+    "reason": "把跨形态数据基础设施与在其轨迹上训练的开放通用策略关联，便于理解数据复用。",
+    "reasonEn": "Connects cross-embodiment data infrastructure with an open generalist policy trained on its trajectories to explain data reuse."
+  }
+]
