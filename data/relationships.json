@@ -394,5 +394,536 @@
     "labelEn": "Shared data & policy transfer",
     "reason": "把跨形态数据基础设施与在其轨迹上训练的开放通用策略关联，便于理解数据复用。",
     "reasonEn": "Connects cross-embodiment data infrastructure with an open generalist policy trained on its trajectories to explain data reuse."
+  },
+  {
+    "source": "behler-parrinello",
+    "target": "gap2010",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Neural potentials 与 Gaussian approximation potentials 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Neural potentials and Gaussian approximation potentials are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "gap2010",
+    "target": "snap2015",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Gaussian approximation potentials 与 SNAP 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Gaussian approximation potentials and SNAP are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "gap2010",
+    "target": "ace2019",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Gaussian approximation potentials 与 Atomic cluster expansion 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Gaussian approximation potentials and Atomic cluster expansion are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "matminer2018",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 matminer 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and matminer are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "cgcnn",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 CGCNN 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and CGCNN are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "chgnet",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 CHGNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and CHGNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "snap2015",
+    "target": "mtp2016",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "SNAP 与 Moment tensor potentials 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "SNAP and Moment tensor potentials are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "snap2015",
+    "target": "ace2019",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "SNAP 与 Atomic cluster expansion 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "SNAP and Atomic cluster expansion are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "gap2010",
+    "target": "mtp2016",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Gaussian approximation potentials 与 Moment tensor potentials 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Gaussian approximation potentials and Moment tensor potentials are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mtp2016",
+    "target": "ace2019",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Moment tensor potentials 与 Atomic cluster expansion 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Moment tensor potentials and Atomic cluster expansion are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matminer2018",
+    "target": "matbench2020",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "matminer 与 Matbench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "matminer and Matbench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matminer2018",
+    "target": "modnet2021",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "matminer 与 MODNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "matminer and MODNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "ace2019",
+    "target": "mace",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Atomic cluster expansion 与 MACE 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Atomic cluster expansion and MACE are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "mat2vec2019",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 mat2vec 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and mat2vec are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mat2vec2019",
+    "target": "sciagents2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "mat2vec 与 SciAgents 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "mat2vec and SciAgents are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matbench2020",
+    "target": "roost2020",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Matbench 与 Roost 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Matbench and Roost are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matbench2020",
+    "target": "crabnet2021",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Matbench 与 CrabNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Matbench and CrabNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "roost2020",
+    "target": "crabnet2021",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Roost 与 CrabNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Roost and CrabNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matbench2020",
+    "target": "modnet2021",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Matbench 与 MODNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Matbench and MODNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "cdvae2022",
+    "target": "diffcsp",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "CDVAE 与 DiffCSP 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "CDVAE and DiffCSP are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "cdvae2022",
+    "target": "unimat2023",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "CDVAE 与 UniMat 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "CDVAE and UniMat are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "cdvae2022",
+    "target": "mattergen",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "CDVAE 与 MatterGen 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "CDVAE and MatterGen are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "unimat2023",
+    "target": "diffcsp",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "UniMat 与 DiffCSP 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "UniMat and DiffCSP are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "unimat2023",
+    "target": "mattergen",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "UniMat 与 MatterGen 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "UniMat and MatterGen are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "nequip",
+    "target": "sevennet2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "NequIP 与 SevenNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "NequIP and SevenNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "sevennet2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 SevenNet 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and SevenNet are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "materials-project2013",
+    "target": "omat242024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Materials Project 与 OMat24 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Materials Project and OMat24 are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "matbench2020",
+    "target": "omat242024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Matbench 与 OMat24 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Matbench and OMat24 are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "omat242024",
+    "target": "orb2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "OMat24 与 Orb 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "OMat24 and Orb are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "chgnet",
+    "target": "orb2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "CHGNet 与 Orb 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "CHGNet and Orb are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "orb2024",
+    "target": "mattersim",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Orb 与 MatterSim 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Orb and MatterSim are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "scienceworld2022",
+    "target": "discoveryworld2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "ScienceWorld 与 DiscoveryWorld 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "ScienceWorld and DiscoveryWorld are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mlagentbench2023",
+    "target": "mlebench2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "MLAgentBench 与 MLE-bench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "MLAgentBench and MLE-bench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mlagentbench2023",
+    "target": "agent-laboratory",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "MLAgentBench 与 Agent Laboratory 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "MLAgentBench and Agent Laboratory are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "discoveryworld2024",
+    "target": "scienceagentbench2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "DiscoveryWorld 与 ScienceAgentBench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "DiscoveryWorld and ScienceAgentBench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "labbench2024",
+    "target": "biomni",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "LAB-Bench 与 Biomni 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "LAB-Bench and Biomni are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "labbench2024",
+    "target": "scienceagentbench2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "LAB-Bench 与 ScienceAgentBench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "LAB-Bench and ScienceAgentBench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "sciagents2024",
+    "target": "researchagent",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "SciAgents 与 ResearchAgent 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "SciAgents and ResearchAgent are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mlagentbench2023",
+    "target": "scienceagentbench2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "MLAgentBench 与 ScienceAgentBench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "MLAgentBench and ScienceAgentBench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "scienceagentbench2024",
+    "target": "mlebench2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "ScienceAgentBench 与 MLE-bench 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "ScienceAgentBench and MLE-bench are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "agentrxiv2025",
+    "target": "agent-laboratory",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "AgentRxiv 与 Agent Laboratory 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "AgentRxiv and Agent Laboratory are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "ai-scientist",
+    "target": "agentrxiv2025",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "The AI Scientist 与 AgentRxiv 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "The AI Scientist and AgentRxiv are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "saycan2022",
+    "target": "palm-e2023",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "SayCan 与 PaLM-E 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "SayCan and PaLM-E are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "saycan2022",
+    "target": "autort",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "SayCan 与 AutoRT 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "SayCan and AutoRT are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "peract2022",
+    "target": "diffusion-policy2023",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "PerAct 与 Diffusion Policy 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "PerAct and Diffusion Policy are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "peract2022",
+    "target": "dp32024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "PerAct 与 3D Diffusion Policy 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "PerAct and 3D Diffusion Policy are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "palm-e2023",
+    "target": "rt2",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "PaLM-E 与 RT-2 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "PaLM-E and RT-2 are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "diffusion-policy2023",
+    "target": "dp32024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Diffusion Policy 与 3D Diffusion Policy 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Diffusion Policy and 3D Diffusion Policy are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "diffusion-policy2023",
+    "target": "aloha-unleashed2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Diffusion Policy 与 ALOHA Unleashed 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Diffusion Policy and ALOHA Unleashed are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "aloha",
+    "target": "mobile-aloha2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "ALOHA / ACT 与 Mobile ALOHA 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "ALOHA / ACT and Mobile ALOHA are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "mobile-aloha2024",
+    "target": "aloha-unleashed2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Mobile ALOHA 与 ALOHA Unleashed 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Mobile ALOHA and ALOHA Unleashed are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "rt2",
+    "target": "openvla2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "RT-2 与 OpenVLA 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "RT-2 and OpenVLA are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "open-x-embodiment",
+    "target": "openvla2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "Open X-Embodiment 与 OpenVLA 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "Open X-Embodiment and OpenVLA are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "openvla2024",
+    "target": "pi0",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "OpenVLA 与 π₀ 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "OpenVLA and π₀ are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "aloha",
+    "target": "aloha-unleashed2024",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "ALOHA / ACT 与 ALOHA Unleashed 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "ALOHA / ACT and ALOHA Unleashed are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "openvla2024",
+    "target": "groot-n12025",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "OpenVLA 与 GR00T N1 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "OpenVLA and GR00T N1 are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "pi0",
+    "target": "groot-n12025",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "π₀ 与 GR00T N1 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "π₀ and GR00T N1 are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "pi0",
+    "target": "pi052025",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "π₀ 与 π₀.₅ 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "π₀ and π₀.₅ are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
+  },
+  {
+    "source": "openvla2024",
+    "target": "pi052025",
+    "type": "thematic",
+    "label": "主题比较",
+    "labelEn": "Thematic comparison",
+    "reason": "OpenVLA 与 π₀.₅ 被编辑关联以比较相关方法或研究基础设施；连线不代表已核实的引用、直接继承或因果影响。",
+    "reasonEn": "OpenVLA and π₀.₅ are linked editorially to compare related methods or research infrastructure; this is not a verified citation, direct inheritance or causal-influence claim."
   }
 ]

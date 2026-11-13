@@ -1,8 +1,8 @@
 {
   "name": "arbor-science-atlas",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Bilingual 3D AI for Science knowledge atlas \u2014 GitHub Pages edition",
+  "description": "Bilingual 3D AI for Science knowledge atlas — GitHub Pages edition",
   "type": "module",
   "engines": {
     "node": ">=22.13.0"

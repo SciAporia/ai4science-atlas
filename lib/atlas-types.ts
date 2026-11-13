@@ -4,9 +4,9 @@ export type KnowledgeNode = {
  id:string; short:string; title:string; authors:string; year:number; domain:string;
  secondaryDomains:string[]; type:string; summary:string; summaryEn:string;
  retained:string; retainedEn:string; caveat:string; caveatEn:string;
- source:{origin?:'survey'|'research';section?:string;page?:number;reference:string|number;checkedAt?:string;publicationType?:'journal'|'conference'|'preprint'|'project';yearNote?:string;yearNoteEn?:string;sources?:{title:string;url:string}[]}; url:string;
+ source:{origin?:'survey'|'research';section?:string;page?:number;file?:string;bibkey?:string;reference:string|number;checkedAt?:string;publicationType?:'journal'|'conference'|'preprint'|'project';publicationStatus?:string;yearNote?:string;yearNoteEn?:string;sources?:{title:string;url:string}[];manuscriptLocators?:{file:string;section:string;bibkey:string}[]}; url:string;
  scores:{representativeness:number;method:number;evidence:number};
- scoreReason:string;scoreReasonEn:string;keywords:string[];subfield?:string;subfieldEn?:string;
+ scoreReason:string;scoreReasonEn:string;keywords:string[];subfield?:string;subfieldEn?:string;editorialTier?:1|2|3;
 };
 export type Domain = {id:string;name:string;en:string;color:string;description:string;descriptionEn:string};
 export type Relation = {source:string;target:string;type:string;label:string;labelEn?:string;reason:string;reasonEn?:string};

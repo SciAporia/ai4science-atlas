@@ -1,12 +1,25 @@
-ARBOR GitHub Pages edition — 2026-11-09
+ARBOR v3 — verification record
+Date: 2026-11-13
+Base repository: https://github.com/SciAporia/ai4science-atlas
+Base revision: 58bf7008db49e2a03fe5c53ee9eb0acfbbb9eb56
+Delivery: local ZIP for self-deployment; no push or deployment performed.
 
-Verified locally:
-- npm ci: passed with the public npm registry and committed lockfile
-- npm run build: data validation, TypeScript and Vite build passed
-- 130 nodes, 9 domains, 44 thematic relationships, 2004–2026
-- Built HTML asset references resolve at root and repository subpaths
-- PDF and favicon included; research JSON matches the deployed atlas
-- No backend or hosted authentication dependencies
+PASS npm run build (data validation, TypeScript, Vite production build), Node 24.
+PASS 264 unique works, 9 domains, 103 thematic relations, years 1998–2026.
+PASS all 130 baseline IDs and all 44 baseline relationship objects preserved.
+PASS publication-height invariants and finite coordinates for all 264 nodes in organic/helix layouts.
+PASS renderer JavaScript syntax checks and git diff whitespace check.
+PASS production assets and dynamic engine load under /ai4science-atlas/.
+PASS fresh/reloaded page defaults to English + light; Chinese and dark toggles.
+PASS search, paper index, node click, detail panel, domain/year/type/provenance/importance combination, empty-state recovery.
+PASS 9-card domain view, timeline, Arbor/Time helix selection, year growth playback, discovery story.
+PASS drag rotation and camera reset in Canvas fallback.
+PASS JSON export parsed with version 3.0, 264 works and 103 relations.
+PASS responsive layout inspection at a 390px iframe viewport.
 
-GitHub workflow has been prepared and reviewed, but has not run in your GitHub account.
-The Vite size warning for the bundled 3D library/data does not fail the build.
+Verification limits:
+The available Chromium environment disables WebGL. Browser interaction/visual QA exercised the Canvas 3D-projection fallback, not the hardware WebGL renderer. WebGL received code review (including outward face winding and resource cleanup), syntax checks and shared-layout checks. No measured frame-rate claim is made; hardware visuals and touch/pinch gestures should be checked on the intended display device.
+
+Vite reports a large main JavaScript chunk (~999 kB minified / ~257 kB gzip), which includes bilingual research data. The Three.js renderer is loaded as a separate local module. No required CDN or remote font fetch is used.
+
+All 134 new works have HTTPS source links. Seventeen original survey records retain PDF page references without a direct-paper URL. Bibliographic checks are not independent experimental replication. The 103 edges are editorial thematic comparisons, not claimed citation/causal inheritance.

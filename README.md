@@ -1,67 +1,80 @@
-# ARBOR — AI for Science Knowledge Atlas
+# ARBOR — An Atlas of Scientific Discovery
 
-可独立部署的 AI4Science 交互式知识树。这个版本使用 **React + TypeScript + Vite + Three.js**，是纯前端静态网站，可部署到 GitHub Pages，无需服务器、数据库、API Key 或 ChatGPT 登录。
+Edition 03 is a bilingual AI for Science atlas built with **React 19, TypeScript, Vite 8 and Three.js**. It contains **264 works across nine domains, spanning 1998–2026**: **134 new works** while preserving the repository’s original **130 research identities**. The atlas has **103 thematic connections**, including all 44 original relations. Live counts and year bounds are derived from `data/nodes.json`.
 
-包含 **130 项研究、9 个领域、44 条主题关联**，覆盖 **2004–2026 年**。保留中英切换、每次进入默认英文、亮暗主题记忆、3D 旋转/缩放/平移、领域聚焦、搜索筛选、时间线、领域视图、节点详情、故事导览和 JSON 导出。WebGL 不可用时自动使用相同三维坐标的兼容渲染。
+**Every fresh page load starts in English and light mode.** Chinese and dark mode are available from the header. The deliverable contains source code, a prebuilt `dist/` and a GitHub Pages workflow for self-deployment; preparing this package does not publish it.
 
-## 直接部署
+## Explore
 
-请按 [GitHub Pages 中文部署说明](DEPLOY_GITHUB_PAGES.zh-CN.md) 操作。仓库已包含 `.github/workflows/deploy.yml`：推送到 `main` 后，自动安装依赖、校验数据、构建并部署。
+- Switch between the sculptural **Arbor** and **Time helix** layouts; play or pause **Watch it grow** to reveal work by year.
+- Orbit, pan, zoom, reset and focus branches or selected papers. Toggle labels, auto orbit, thematic connections and immersive viewing.
+- Combine domain, year range, search, work type, provenance and editorial-importance filters.
+- Read paper contributions, retained artifacts, evidence boundaries, source versions and related work.
+- Use the timeline, domain map, searchable paper index and guided discovery stories; export filtered graph data or the research log as JSON.
 
-**解压后，把项目目录里面的内容放到仓库根目录**，确保仓库根目录直接出现 `package.json`、`index.html` 和 `.github/`。不要把 ZIP 本身或外层文件夹当成网站上传。
+The domain map groups records; it is not a citation network. Cross-domain tags point to the same canonical record. Domain navigation can therefore overlap, while the global count remains unique.
 
-在 GitHub 仓库中将 **Settings → Pages → Build and deployment → Source** 设置为 **GitHub Actions**。首次启用后可在 Actions 页面手动运行工作流。本交付包没有替你创建仓库或执行 GitHub 部署。
+## Run and build
 
-## 本地运行
+Use **Node.js 24** to match the included deployment workflow. From the project root:
 
-推荐 **Node.js 24**，版本记录在 `.nvmrc`；依赖版本由 `package-lock.json` 锁定。
-
-```bash
+```sh
 npm ci
 npm run dev
 ```
 
-打开终端显示的本地地址。生产构建和预览：
+For a validated production build and local preview:
 
-```bash
+```sh
 npm run build
 npm run preview
 ```
 
-`npm run build` 会先运行数据校验和 TypeScript 检查，再生成 `dist/`。也可单独运行 `npm run check`。
+`npm run build` validates the atlas, runs the TypeScript check and writes the Vite output to `dist/`. To inspect the already built package without installing Node dependencies:
 
-ZIP 内附预构建的 `dist/`，便于静态预览或上传到其他静态服务器。它已被 `.gitignore` 排除；GitHub Actions 每次从源码重新构建，不依赖这份预构建目录。请通过 HTTP 服务器访问，勿直接双击 HTML 使用 `file://` 打开。
+```sh
+python3 -m http.server 8000 --directory dist
+```
 
-## 项目文件
+Open `http://localhost:8000`. Serve over HTTP: opening `index.html` through `file://` is unsupported because the application loads JavaScript modules. Vite uses `base: './'`, so the complete output also works under a repository subpath.
 
-| 路径 | 用途 |
+## Self-deploy to GitHub Pages
+
+Extract the ZIP and place its **contents at the repository root**, preserving `.github/workflows/deploy.yml`. Under **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**. The included workflow builds on a push to `main` and also supports a manual run. It installs the locked dependencies with Node.js 24, runs `npm run build` and publishes `dist/`.
+
+See [the Chinese deployment guide](DEPLOY_GITHUB_PAGES.zh-CN.md) for the complete process. Uploading the ZIP file itself does not deploy the application.
+
+## Source map
+
+| Path | Purpose |
 | --- | --- |
-| `index.html`、`src/main.tsx` | 静态页面与 React 入口 |
-| `app/page.tsx`、`app/globals.css` | 页面逻辑、双语文案和主题样式 |
-| `components/KnowledgeTree.tsx` | Three.js 场景与交互 |
-| `components/SoftwareTree.tsx` | WebGL 不可用时的兼容渲染 |
-| `lib/tree-layout.ts` | 共用三维布局与时间/大小映射 |
-| `lib/domains.ts` | 领域名称、说明和配色 |
-| `data/nodes.json` | 130 项研究记录 |
-| `data/relationships.json` | 44 条主题关联及双语理由 |
-| `data/research-review.json` | 调研范围、检索记录、来源和领域总结 |
-| `lib/design-plan.ts` | 站内方法与设计说明 |
-| `public/source-survey.pdf` | 用户提供的原始综述 |
-| `tests/validate-atlas.mjs` | 数据完整性与关系端点校验 |
-| `.github/workflows/deploy.yml` | GitHub Pages 自动部署 |
+| `app/page.tsx`, `app/globals.css` | React interface, state and visual system |
+| `components/KnowledgeTree.tsx` | React adapter for the current rendering engines |
+| `public/engine/tree.js` | Three.js / OrbitControls renderer and fallback selection |
+| `public/engine/tree-canvas.js` | Canvas2D perspective projection when WebGL is unavailable |
+| `public/engine/tree-layout.js` | Shared deterministic layout, time scale and node radii |
+| `public/engine/vendor/` | Local Three.js modules and license |
+| `data/nodes.json`, `data/relationships.json` | Canonical research records and explicit relationships |
+| `data/research-review.json` | Expansion methodology and domain review notes |
+| `lib/atlas-types.ts`, `lib/atlas.ts` | Data contract, editorial scoring and computed counts |
+| `lib/design-plan.ts` | Bilingual in-app design and methodology text |
+| `public/source-survey.pdf` | Original survey, separate from later research additions |
+| `tests/validate-atlas.mjs` | Data integrity checks |
+| `DESIGN_SPEC.md` | Chinese design and implementation specification |
+| `.github/workflows/deploy.yml` | GitHub Pages build and deployment |
 
-`app/` 只是保留的源码目录名，本版本不使用 Next.js App Router，也不需要 Next.js 或 Cloudflare。
+## Data and visual meaning
 
-## 数据与扩展
+A paper has a stable ID, one primary domain, optional secondary domains, bilingual contribution and limitation text, publication metadata, sources, and transparent editorial scores. Original survey records retain their survey references; independently researched additions are explicitly labeled and do not acquire invented survey page numbers. The survey cutoff is **2 November 2026**; this expansion was checked on **13 November 2026**, and records retain their individual check dates and cited versions.
 
-52 项记录来自原始 R6 综述，78 项为扩展调研。新增记录附原始来源、出版类型、核查日期、双语贡献与局限；在线发表、预印本与期刊卷期不同的情况保留年份说明。核查日期为 2026-11-09。这是有选择的学术图谱，不能当作穷尽式系统综述或独立实验复现。
+Three editorial dimensions receive 1–5: representativeness `R`, method value `M`, and relevance to the evidence discussion `E`. The displayed score is `S = 0.5R + 0.3M + 0.2E`. It is a navigation judgment, **not a citation count, reliability rating or RSI maturity score**.
 
-节点的主领域决定其树枝位置，跨领域标签参与筛选但不重复创建节点。高度映射所引版本年份；节点大小依据公开的编辑评分：代表性 50%、方法价值 30%、证据讨论相关性 20%。评分不是引用量，也不代表实验可靠性。结构枝线表示领域归属，主题关联不等同于已验证的引用或因果继承。
+Both rendering paths use `t = (year − minYear) / (maxYear − minYear)`, `y = −4 + 10.5t`, and base node radius `r = 0.072√S`. Same-year nodes share world-coordinate height; X/Z offsets separate them. Filters do not change this scale. At equal camera depth, projected area is approximately proportional to `S`; perspective and selection emphasis change apparent size. The roots mark the beginning of the selected collection, not the origin of scientific AI.
 
-添加研究时修改 `data/nodes.json`；添加关系时修改 `data/relationships.json`，然后运行 `npm run check`。保留已有稳定 `id`。`public/source-survey.pdf` 可以替换为你的新版文章；若不准备展示全文，删除文件时同步移除页面中的相关链接。
+Branches express editorial grouping. Thematic connections do not establish citation, direct inheritance or causality. New records should be deduplicated by paper/system identity, retain accurate version dates, explain their scores and limitations, and resolve all relationship endpoints. Run `npm run build` after data changes.
 
-资源路径采用 `base: './'` 和 `import.meta.env.BASE_URL`，可用于仓库子路径、用户主页根路径或自定义域名，无需填写 GitHub 用户名。字体使用 Google Fonts，无法加载时自动回退到系统字体。
+## Rendering and verification scope
 
-## 第三方依赖
+WebGL is the primary renderer. If a context cannot initialize, the application switches to a Canvas2D renderer that projects the same 3D layout. This preserves the reading structure and interactions, while materials and lighting differ. The timeline and paper index also remain available independently of WebGL.
 
-运行时依赖的许可文本保存在 `third-party-licenses/`，请随项目保留。论文、原始综述与项目代码的权属不因本导出包而变更。
+Browser verification in the available environment exercised the **Canvas fallback**. The primary WebGL renderer was **not browser-exercised in that environment**. No measured FPS or universal device-performance claim is made. Inspect the WebGL path on the intended presentation device before an event.
